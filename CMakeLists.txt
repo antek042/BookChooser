@@ -6,6 +6,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(BooksOrder src/main.cpp src/csv_tools.cpp)
+add_executable(BooksOrder src/main.cpp)
 
 target_include_directories(BooksOrder PRIVATE inc)
