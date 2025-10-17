@@ -25,7 +25,7 @@ std::vector<Book> read_csv(const std::string& filepath){
             }
         }
         data.push_back(line.substr(last));
-        books_queue.push_back(Book(data[0], data[1], data[2], std::stoi(data[3]), std::stoi(data[4])));
+        books_queue.push_back(Book(data[0], data[1], static_cast<Genre>(std::stoi(data[2])), std::stoi(data[3]), std::stoi(data[4])));
     }
     
     csv_file.close();
